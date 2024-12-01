@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="CSS/adminn.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <button id="menu-icon" class="menu-btn">☰</button>
+        <div id="logo-container">
+            <img src="PICS/Syne.png" alt="SyneEd Logo" id="logo">
+            <h1>SyneEd</h1>
+        </div>
+        <div id="profile">
+            <img src="PICS/Person.png" alt="Profile Picture">
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar hidden">
+            <ul>
+                <li><a href="#" class="menu-item active">Dashboard</a></li>
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Classrooms</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Feedback and Support</a></li>
+              </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <h1>Welcome, Admin!</h1>
+        </header>
+
+        <section class="stats-overview">
+            <div class="stat-card">
+                <h3>Total Teachers</h3>
+                <p id="total-teachers">5</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="total-students">120</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Classrooms</h3>
+                <p id="active-classrooms">10</p>
+            </div>
+            <div class="stat-card">
+                <h3>Tasks Due Today</h3>
+                <p id="tasks-due">3</p>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-card">
+                <h3>Weekly Attendance</h3>
+                <canvas id="weekly-attendance-chart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Daily Tasks</h3>
+                <canvas id="daily-tasks-chart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/admin.js"></script>
+</body>
+</html>
