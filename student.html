@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyneEd - Student UI</title>
+  <link rel="stylesheet" href="CSS/student.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <div id="sidebar" class="hidden">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">My Classes</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main">
+      <!-- Navbar -->
+      <nav>
+        <button id="menu-icon">☰</button>
+        <div id="logo-container">
+          <img src="PICS/Syne.png" alt="SyneEd Logo" id="logo">
+          <h1>SyneEd</h1>
+        </div>
+        <div id="profile">
+          <img src="profile-placeholder.png" alt="Profile Picture">
+        </div>
+      </nav>
+      
+      <!-- Body Content -->
+      <main>
+        <!-- Classrooms Section -->
+        <section id="classrooms">
+          <h2>My Classrooms</h2>
+          <div id="class-list" class="classroom-container">
+            <!-- Example Classroom Cards -->
+            <div class="classroom-card">
+              <h3>Web Dev 101</h3>
+              <p>Instructor: Mr. Sonny Boy Ellema</p>
+              <button class="view-class-btn">View</button>
+            </div>
+            <div class="classroom-card">
+              <h3>Data Structures and Algorithms</h3>
+              <p>Instructor: Mrs. Judy Ann Pandong</p>
+              <button class="view-class-btn">View</button>
+            </div>
+          </div>
+          <button id="join-class-btn">Join a Classroom</button>
+          <div id="join-class-form" class="hidden">
+            <input type="text" id="class-code" placeholder="Enter class code">
+            <button id="submit-class-code">Join</button>
+          </div>
+        </section>
+      </main>
+      
+    </div>
+  </div>
+  <script src="JS/student.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+      <p>&copy; 2024 SyneEd. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+</html>

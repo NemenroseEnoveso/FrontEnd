@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - SyneEd</title>
+  <link rel="stylesheet" href="CSS/sign.css"> <!-- Link to your external CSS -->
+  <script scr="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+     
+      <!-- Sign-Up Section -->
+      <div class="signup-section">
+        <div class="logo">
+          <img src="PICS/Syne.png" alt="SyneEd Logo">
+        </div>
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="#" method="POST"> <!-- Add action and method to handle form submission -->
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+          <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+
+        <p class="or-text">Or sign up with</p>
+
+        <!-- Social Login Buttons -->
+        <div class="social-buttons">
+          <button class="social-button google" aria-label="Sign up with Google">
+            <img src="PICS/google-logo.png" alt="Google Logo">
+          </button>
+          <button class="social-button github" aria-label="Sign up with GitHub">
+            <img src="PICS/github-logo.png" alt="GitHub Logo">
+          </button>
+          <button class="social-button facebook" aria-label="Sign up with Facebook">
+            <img src="PICS/facebook-logo.png" alt="Facebook Logo">
+          </button>
+        </div>
+
+        <p class="signin-text">
+          Already have an account? <a href="SignIn.html"><strong>Sign In</strong></a>
+        </p>
+      </div>
+    </div>
+
+    <script src="JS/signup.js"></script>
+</body>
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2024 SyneEd. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+</html>

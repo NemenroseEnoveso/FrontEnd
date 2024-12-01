@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - SyneEd</title>
+  <link rel="stylesheet" href="CSS/sign.css"> <!-- Link to your external CSS -->
+</head>
+<body>
+
+    <div class="container">
+     
+      <!-- Sign-Up Section -->
+      <div class="signin-section">
+        <div class="logo">
+          <img src="PICS/Syne.png" alt="SyneEd Logo">
+        </div>
+        <h1>Sign In</h1>
+        <form id="signin-form" action="#" method="POST"> <!-- Add action and method to handle form submission -->
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <button type="submit" class="signin-button">Sign In</button>
+        </form>
+
+        <p class="or-text">Or sign in with</p>
+
+        <!-- Social Login Buttons -->
+        <div class="social-buttons">
+          <button class="social-button google" aria-label="Sign up with Google">
+            <img src="PICS/google-logo.png" alt="Google Logo">
+          </button>
+          <button class="social-button github" aria-label="Sign up with GitHub">
+            <img src="PICS/github-logo.png" alt="GitHub Logo">
+          </button>
+          <button class="social-button facebook" aria-label="Sign up with Facebook">
+            <img src="PICS/facebook-logo.png" alt="Facebook Logo">
+          </button>
+        </div>
+
+        <p class="signin-text">
+          Forgot password? <a href="#"><strong><i>Click Here</i></strong></a>
+        </p>
+      </div>
+    </div>
+
+</body>
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2024 SyneEd. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script scr ="JS/signin.js"></script>
+</html>

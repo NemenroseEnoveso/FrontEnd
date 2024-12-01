@@ -1,0 +1,247 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App Layout */
+  #app {
+    display: flex;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0px;
+    font-family: Lucida, monospace;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Sidebar */
+  #sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #545174;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    left: -250px;
+    transition: 0.3s;
+  }
+  
+  #sidebar ul {
+    list-style: none;
+  }
+  
+  #sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+  }
+  
+  #sidebar ul li a:hover {
+    background-color: #48457a;
+  }
+  
+  /* Main Content */
+  #main {
+    flex: 1;
+    padding: 0;
+  }
+  
+
+/* Navbar */
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #bdc3c7;
+    color: #545174;
+  }
+  
+  #menu-and-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between sidebar icon and logo-container */
+  }
+  
+  #menu-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  #logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; /* Space between logo and text */
+  }
+  
+  #logo {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+  }
+  
+  #logo-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  #profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }  
+  
+  
+  /* Classrooms Section */
+#classrooms {
+    background: linear-gradient(to right, #e3eff1 30%, #b7d6e2 70%); /* Gradient background */
+    /* border: 2px solid #34495e; Obvious Outline */
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto; /* Margin from body */
+    background-color: #f8f9fa; /* Light background */
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+  }
+  
+  #classrooms h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #545174;
+    text-align: center;
+  }
+  
+  .classroom-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .classroom-card {
+    /* background: linear-gradient(to left, #e3eff1 30%, #b7d6e2 70%); Gradient background */
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .classroom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .classroom-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .classroom-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+  }
+  
+  .view-class-btn {
+    background-color: #657a9c;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-class-btn:hover {
+    background-color: #004d40;
+  }
+  
+  /* Join Classroom Form */
+  #join-class-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: #657a9c;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #join-class-btn:hover {
+    background-color: #004d40;
+  }
+  
+  #join-class-form {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #class-code {
+    width: 70%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+  }
+  
+  #submit-class-code {
+    background-color: #657a9c;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit-class-code:hover {
+    background-color: #004d40;
+  }
+  
+  footer {
+    background-color: transparent; /* Transparent background */
+    color: #545174; /* Text color */
+    padding: 5px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align with left edge */
+    box-shadow: none; /* No outline or shadow */
+    font-size: 10px; /* Smaller text size */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Maximum width to keep content centered */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  footer p {
+    margin: 5px 0; /* Space between text */
+  }
+  
+  footer a {
+    color: #545174; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+  }
